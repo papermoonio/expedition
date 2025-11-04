@@ -161,7 +161,7 @@ export default (props: any) => {
         onNext={() => {
           props.history.push(`/blocks/${blockNumber - 15}`);
         }}
-        style={{ marginTop: "30px" }}
+        style={{ marginTop: "0px" }}
       />
     </div>
   );

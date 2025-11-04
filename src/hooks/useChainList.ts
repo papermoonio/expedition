@@ -8,14 +8,19 @@ export default function () {
   const { t } = useTranslation();
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "Westend AssetHub",
-      network: t("testnet"),
-      rpc: ["https://westend-asset-hub-eth-rpc.polkadot.io/"],
+      name: "Polkadot TestNet",
+      network: t("Paseo Asset Hub"),
+      rpc: ["https://services.polkadothub-rpc.com/testnet"],
     },
     {
       name: "Paseo PassetHub",
-      network: t("testnet"),
+      network: t("Paseo"),
       rpc: ["https://testnet-passet-hub-eth-rpc.polkadot.io/"],
+    },
+    {
+      name: "Westend AssetHub",
+      network: t("Westend"),
+      rpc: ["https://westend-asset-hub-eth-rpc.polkadot.io/"],
     },
     {
       name: "Dev Node",

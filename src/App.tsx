@@ -266,7 +266,7 @@ function App(props: any) {
                     </Grid>
                     <Grid>
                       <Typography color="textSecondary" variant="h6">
-                        {t("Exp. AssetHub EVM Basic Explorer")}
+                        {t("Polkadot Hub EVM Basic Explorer")}
                       </Typography>
                     </Grid>
                   </Grid>

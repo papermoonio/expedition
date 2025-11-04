@@ -171,9 +171,10 @@ export const darkTheme = responsiveFontSizes(
           border: `2px solid ${brandColors.polkadotPink}`,
           position: "relative",
           zIndex: 1, // Keep cards below the AppBar
-          marginTop: "8px", // Add some top margin to prevent overlap
+          marginTop: "24px", // Increased top margin
+          marginBottom: "8px", // Reduced bottom margin
           "&:hover": {
-            borderColor: brandColors.white,
+            borderColor: brandColors.cyan,
             boxShadow: `0 0 10px ${brandColors.polkadotPink}33`, // Pink glow on hover
           },
         },
@@ -211,6 +212,13 @@ export const darkTheme = responsiveFontSizes(
               backgroundColor: `${brandColors.polkadotPink}44`,
             },
           },
+        },
+      },
+      MuiCircularProgress: {
+        root: {
+          display: "block",
+          margin: "80px auto 0 auto", // Center horizontally and add top margin
+          color: brandColors.polkadotPink,
         },
       },
     },
