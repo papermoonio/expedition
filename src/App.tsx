@@ -43,7 +43,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import moonbeamLogo from "./explorer.png";
+import logo from "./explorer.png";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -262,7 +262,7 @@ function App(props: any) {
                         alt="expedition-logo"
                         height="30"
                         style={{ marginRight: "10px" }}
-                        src={moonbeamLogo}
+                        src={logo}
                       />
                     </Grid>
                     <Grid>
@@ -323,10 +323,10 @@ function App(props: any) {
                   </IconButton>
                 </Tooltip>
                 {/* <LanguageMenu /> */}
-                <Tooltip title={t("Moonbeam Documentation") as string}>
+                <Tooltip title={t("DataHaven Documentation") as string}>
                   <IconButton
                     onClick={
-                      () => window.open("https://docs.moonbeam.network") //tslint:disable-line
+                      () => window.open("https://docs.datahaven.xyz") //tslint:disable-line
                     }
                   >
                     <NotesIcon />
