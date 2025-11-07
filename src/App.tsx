@@ -25,7 +25,7 @@ import Block from "./containers/Block";
 import Dashboard from "./containers/Dashboard";
 import NodeView from "./containers/NodeView";
 import Transaction from "./containers/Transaction";
-import { darkTheme } from "./themes/moonbeamTheme";
+import { darkTheme } from "./themes/datahavenTheme";
 import NotesIcon from "@material-ui/icons/Notes";
 import CodeIcon from "@material-ui/icons/Code";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
@@ -267,7 +267,7 @@ function App(props: any) {
                     </Grid>
                     <Grid>
                       <Typography color="textSecondary" variant="h6">
-                        {t("Moonbeam Basic Explorer")}
+                        {t("DataHaven Basic Explorer")}
                       </Typography>
                     </Grid>
                   </Grid>

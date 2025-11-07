@@ -4,41 +4,19 @@ import { IChain as Chain } from "../models/chain";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-declare var process: {
-  env: {
-    REACT_APP_MOONBASEAPI: string;
-    REACT_APP_MOONRIVERAPI: string;
-    REACT_APP_MOONBEAMAPI: string;
-  };
-};
 
 export default function () {
   const { t } = useTranslation();
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "Moonbeam",
-      network: t("mainnet"),
-      rpc: ["https://rpc.api.moonbeam.network"],
+      name: "DataHaven TestNet",
+      network: t("TestNet"),
+      rpc: ["https://services.datahaven-testnet.network/testnet"],
     },
     {
-      name: "Moonriver",
-      network: t("mainnet"),
-      rpc: [
-        "https://moonriver-api.bwarelabs.com/" +
-          process.env.REACT_APP_MOONRIVERAPI,
-      ],
-    },
-    {
-      name: "MoonbaseAlpha",
-      displayName: "Moonbase Alpha",
-      network: t("testnet"),
-      rpc: ["https://rpc.api.moonbase.moonbeam.network"],
-    },
-    {
-      name: "MoonbeamDevNode",
-      displayName: "Moonbeam Dev Node",
-      network: t("testnet"),
-      rpc: ["http://localhost:9944"],
+      name: "Dev Environment",
+      network: t("Dev Node"),
+      rpc: ["http://127.0.0.1:9888"],
     },
   ]);
 

@@ -7,3 +7,7 @@ dist
 /**/build
 .vscode
 services
+
+
+.github/instructions/kluster-code-verify.instructions.md
+.kluster
