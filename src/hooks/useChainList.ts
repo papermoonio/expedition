@@ -24,7 +24,7 @@ export default function () {
     },
     {
       name: "Dev Node",
-      network: t("localhost:8545"),
+      network: t("localhost 8545"),
       rpc: ["http://localhost:8545"],
     },
   ]);
